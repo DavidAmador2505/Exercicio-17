@@ -51,7 +51,7 @@ namespace Exercicio_17
         private void button2_Click(object sender, EventArgs e)
         {
             FecharTodososForms.Fecharformularios();
-            button3.ForeColor = Color.Black;
+            button3.ForeColor = Color.Black; 
         }
 
         private void button3_Click(object sender, EventArgs e)

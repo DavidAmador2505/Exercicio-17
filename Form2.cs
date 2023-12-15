@@ -89,5 +89,16 @@ namespace Exercicio_17
                 TxtPassword.UseSystemPasswordChar = true;
             }
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (ClasseUtilizador utilizador in ClasseUtilizador.ListaUtilizadores)
+            {
+                ListaUtilizadores.Items.Add("Nome:" + ClasseUtilizador.Nome);
+                ListaUtilizadores.Items.Add("Email:" + ClasseUtilizador.Email);
+                ListaUtilizadores.Items.Add("Password:" + ClasseUtilizador.Password);
+            }
+
+        }
     }
 }

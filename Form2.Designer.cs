@@ -39,8 +39,7 @@
             button2 = new Button();
             button3 = new Button();
             cbPassword = new CheckBox();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ListaUtilizadores = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -144,22 +143,22 @@
             cbPassword.UseVisualStyleBackColor = true;
             cbPassword.CheckedChanged += cbPassword_CheckedChanged;
             // 
-            // pictureBox1
+            // ListaUtilizadores
             // 
-            pictureBox1.Image = Properties.Resources.download__1_;
-            pictureBox1.Location = new Point(437, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(253, 196);
-            pictureBox1.TabIndex = 13;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            ListaUtilizadores.FormattingEnabled = true;
+            ListaUtilizadores.ItemHeight = 15;
+            ListaUtilizadores.Location = new Point(386, 34);
+            ListaUtilizadores.Name = "ListaUtilizadores";
+            ListaUtilizadores.Size = new Size(184, 139);
+            ListaUtilizadores.TabIndex = 14;
+            ListaUtilizadores.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
+            Controls.Add(ListaUtilizadores);
             Controls.Add(cbPassword);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -173,7 +172,6 @@
             Controls.Add(label1);
             Name = "Form2";
             Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -191,6 +189,6 @@
         private Button button2;
         private Button button3;
         private CheckBox cbPassword;
-        private PictureBox pictureBox1;
+        private ListBox ListaUtilizadores;
     }
 }

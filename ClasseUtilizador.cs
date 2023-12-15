@@ -14,7 +14,19 @@ namespace Exercicio_17
         public static string Email;
 
         public static string Password;
+
+        public ClasseUtilizador(string nome, string email, string password)
+        {
+            Nome = nome;
+            Email = email;
+            Password = password;
+
+        }
+
+        public static List<ClasseUtilizador> ListaUtilizadores = new List<ClasseUtilizador>();
+
+        public static List (ClasseUtilizador.nome);
+
     }
- 
 
 }

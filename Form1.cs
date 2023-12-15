@@ -45,13 +45,13 @@ namespace Exercicio_17
 
             MessageBox.Show("Nome:", ClasseUtilizador.Nome);
 
-            Btn_Registar.ForeColor = Color.Black;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             FecharTodososForms.Fecharformularios();
-            button3.ForeColor = Color.Black; 
+            button3.ForeColor = Color.Black;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -59,7 +59,7 @@ namespace Exercicio_17
             this.Hide();
             Form2 Seguinte = new Form2();
             Seguinte.Show();
-            button2.ForeColor = Color.Black;
+           
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -77,10 +77,6 @@ namespace Exercicio_17
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void label4_Click(object sender, EventArgs e)
         {

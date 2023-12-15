@@ -38,9 +38,7 @@
             button2 = new Button();
             button3 = new Button();
             cbPassword = new CheckBox();
-            pictureBox1 = new PictureBox();
             label4 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // TxtNome
@@ -135,16 +133,6 @@
             cbPassword.UseVisualStyleBackColor = true;
             cbPassword.CheckedChanged += checkBox1_CheckedChanged;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.download__1_;
-            pictureBox1.Location = new Point(528, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(236, 195);
-            pictureBox1.TabIndex = 10;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -161,7 +149,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label4);
-            Controls.Add(pictureBox1);
             Controls.Add(cbPassword);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -175,7 +162,6 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -192,7 +178,6 @@
         private Button button2;
         private Button button3;
         private CheckBox cbPassword;
-        private PictureBox pictureBox1;
         private Label label4;
     }
 }

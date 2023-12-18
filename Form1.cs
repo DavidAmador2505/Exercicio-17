@@ -6,7 +6,7 @@ namespace Exercicio_17
         {
             InitializeComponent();
             this.BackColor = Color.Black;
-            this.ForeColor = Color.White;
+            this.ForeColor = Color.Black;
             this.Text = "Página Principal";
             label4.Text = ClasseUtilizador.Nome;
 
@@ -35,15 +35,28 @@ namespace Exercicio_17
             string email = TxtEmail.Text;
             string password = TxtPassword.Text;
 
-            ClasseUtilizador.Nome = nome;
-            ClasseUtilizador.Email = email;
-            ClasseUtilizador.Password = password;
+            if (nome == "")
+            {
+                string Nome = "Nome";
+            }
 
-            ClasseUtilizador.Nome = "Utilizador:" + TxtNome.Text;
-            label4.Text = ClasseUtilizador.Nome;
+            if (email == "")
+            {
+                string Email = "Email";
+            }
 
+            if (password == "")
+            {
+                string Password = "Password";
+                MessageBox.Show("Utilizador Registado");
+            }
 
-            MessageBox.Show("Nome:", ClasseUtilizador.Nome);
+            else
+            {
+                MessageBox.Show("Não Preencheu" + nome + email + password);
+            }
+
+         
 
             
         }

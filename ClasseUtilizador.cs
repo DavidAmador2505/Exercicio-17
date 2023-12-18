@@ -9,11 +9,9 @@ namespace Exercicio_17
 {
     public class ClasseUtilizador
     {
-        public static string Nome;
-
-        public static string Email;
-
-        public static string Password;
+        public string Nome;
+        public string Email;
+        public string Password;
 
         public ClasseUtilizador(string nome, string email, string password)
         {
@@ -25,7 +23,12 @@ namespace Exercicio_17
 
         public static List<ClasseUtilizador> ListaUtilizadores = new List<ClasseUtilizador>();
 
-        public static List (ClasseUtilizador.nome);
+        public static void Registar(string nome, string email, string password)
+        {
+           ClasseUtilizador novoUtilizador=new ClasseUtilizador(nome, email, password);
+            ListaUtilizadores.Add(novoUtilizador);
+            MessageBox.Show("Utilizador Registado");
+        }
 
     }
 
